@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Navbar = ({ setCategory }) => {
-  const [activeCategory, setActiveCategory] = useState("technology");
+  const [activeCategory, setActiveCategory] = useState("general");
 
   const handleClick = (cat) => {
     setCategory(cat);
@@ -28,6 +28,13 @@ const Navbar = ({ setCategory }) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item px-4">
+              <a
+                href="#"
+                className={`nav-link ${activeCategory === "general" ? "active" : ""}`}
+                onClick={() => handleClick("general")}
+              >
+                General
+              </a>
               <a
                 href="#"
                 className={`nav-link ${activeCategory === "technology" ? "active" : ""}`}
