@@ -35,6 +35,8 @@ const Navbar = ({ setCategory }) => {
               >
                 General
               </a>
+            </li>
+            <li className="nav-item px-4">
               <a
                 href="#"
                 className={`nav-link ${activeCategory === "technology" ? "active" : ""}`}
@@ -43,6 +45,7 @@ const Navbar = ({ setCategory }) => {
                 Technology
               </a>
             </li>
+            
             <li className="nav-item px-4">
               <a
                 href="#"
